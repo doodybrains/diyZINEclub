@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import '../assets/stylesheets/index.scss'
 
 const IndexPage = ({data}) => (
   <div>
@@ -8,8 +8,7 @@ const IndexPage = ({data}) => (
         <div className="container">
           <h2>{post.node.title}</h2>
           <img src={post.node.image.file.url} />
-          <p>{post.node.blurb}</p>
-          <p>{post.node.moreInfo}</p>
+          <p>{post.node.blurb}<span> {post.node.moreInfo}</span></p>
         </div>
       )
     })}

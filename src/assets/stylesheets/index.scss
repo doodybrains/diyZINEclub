@@ -5,16 +5,18 @@ p { font-family: monospace; font-size: 1.125em; font-style: normal; font-weight:
   padding: 20px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
   width: 100%;
   max-width: 80%;
-  height: 100vh;
+  // height: 100vh;
   margin: 0 auto;
+  text-align: center;
 }
 
 img {
   display: block;
   margin: 0 auto 30px auto;
+  width: 70%;
+  height: auto;
 }

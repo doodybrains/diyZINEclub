@@ -12,6 +12,29 @@ const IndexPage = ({data}) => (
         </div>
       )
     })}
+
+    <div className="zine-links">
+      <p>some links to zines we have made:</p>
+      {data.allContentfulZiner.edges.map((post, i) => {
+          return (
+            <div className="container">
+              <h3>{post.node.name}</h3>
+
+              {post.node.linkOne &&
+                <a href={post.node.linkOne} target="_blank">{post.node.linkOne}</a>
+              }
+
+              {post.node.linkTwo &&
+                <a href={post.node.linkOne} target="_blank">{post.node.linkTwo}</a>
+              }
+
+              {post.node.linkThree &&
+                <a href={post.node.linkOne} target="_blank">{post.node.linkThree}</a>
+              }
+            </div>
+          )
+        })}
+    </div>
   </div>
 )
 
@@ -28,6 +51,16 @@ export const query = graphql`
           }
           blurb
           moreInfo
+        }
+      }
+    }
+    allContentfulZiner {
+      edges {
+        node {
+          name
+          linkOne
+          linkTwo
+          linkThree
         }
       }
     }

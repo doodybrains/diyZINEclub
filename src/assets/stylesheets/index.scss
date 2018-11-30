@@ -1,5 +1,6 @@
 h2 { font-family: monospace; font-size: 2em; font-style: normal;font-weight: 700; margin-bottom: 30px;} 
-p { font-family: monospace; font-size: 1.125em; font-style: normal; font-weight: 400; margin-bottom: 8px; line-height: 1.4em;} 
+p, a { font-family: monospace; font-size: 1.125em; font-style: normal; font-weight: 400; margin-bottom: 8px; line-height: 1.4em;} 
+h3 { font-family: monospace; font-size: 1.25em; font-style: normal;font-weight: 700; margin-bottom: 30px;} 
 
 .container {
   padding: 20px;
@@ -19,4 +20,12 @@ img {
   margin: 0 auto 30px auto;
   width: 70%;
   height: auto;
+}
+
+.zine-links {
+  display: flex;
+  border-top: 3px dotted black;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
 }

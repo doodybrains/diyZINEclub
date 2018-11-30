@@ -25,11 +25,11 @@ const IndexPage = ({data}) => (
               }
 
               {post.node.linkTwo &&
-                <a href={post.node.linkOne} target="_blank">{post.node.linkTwo}</a>
+                <a href={post.node.linkTwo} target="_blank">{post.node.linkTwo}</a>
               }
 
               {post.node.linkThree &&
-                <a href={post.node.linkOne} target="_blank">{post.node.linkThree}</a>
+                <a href={post.node.linkThree} target="_blank">{post.node.linkThree}</a>
               }
             </div>
           )
